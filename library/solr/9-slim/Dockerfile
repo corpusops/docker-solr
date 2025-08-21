@@ -1,6 +1,6 @@
-ARG ANCESTOR=library/solr:7.7-slim
+ARG ANCESTOR=library/solr:9-slim
 ARG RSYNC=corpusops/rsync
-FROM library/solr:7.7-slim AS final
+FROM library/solr:9-slim AS final
 ARG DO_UPDATE=y
 ARG NONINTERACTIVE=y
 ARG DEBIAN_FRONTEND=noninteractive
